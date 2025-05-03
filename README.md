@@ -10,7 +10,12 @@ I created this branch due to it's simplicity when using [OpenPCDet](https://gith
 # Useage
 ---
 
-Let's first install latest cumm
+**NOTE** - run this first in order to build spconv and cumm. 
+```
+import os
+os.environ["CUMM_CUDA_ARCH_LIST"] = "7.5"
+```
+You can get the ARCH list for orin nano, Xavier, etc from the issue mentioned above
 
 1. Clone the required reopsitories
 ```
@@ -30,4 +35,5 @@ cd spconv
 !pip install -e .
 import spconv
 ```
+
 
